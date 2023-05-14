@@ -1,0 +1,9 @@
+.row-test-build:last-child .col-test-build {
+    border-bottom: 0;
+}
+.row-test-build:last-child .col-test-build:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+.row-test-build:last-child .col-test-build:last-child {
+    border-bottom-right-radius: 0.5rem;
+}
