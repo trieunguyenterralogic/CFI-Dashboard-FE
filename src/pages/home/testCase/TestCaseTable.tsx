@@ -31,6 +31,7 @@ const TextArea = styled(OutlinedInput)<OutlinedInputProps>(() => {
         "&.MuiInputBase-root": {
             padding: 0,
             paddingRight: "10px",
+            background: "#FFF",
         },
         "& .MuiInputBase-input": {
             padding: "8.5px 0px 8.5px 10px",
@@ -102,7 +103,12 @@ const TestCaseTable = () => {
                             </TableCell>
                             <TableCell>
                                 <Select
-                                    options={[10, 20, 30]}
+                                    options={[
+                                        "Passed",
+                                        "Failed",
+                                        "Errored",
+                                        "Skiped",
+                                    ]}
                                     placeholder="Result"
                                     fullWidth
                                 />

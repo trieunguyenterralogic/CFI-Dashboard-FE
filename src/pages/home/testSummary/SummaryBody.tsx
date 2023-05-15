@@ -40,7 +40,7 @@ const SummaryBody = (props: Props) => {
         <TableBody>
             {testSummaryList.map((summary: TestSummary, index: number) => {
                 const {
-                    useCase,
+                    name,
                     total,
                     passed,
                     failed,
@@ -51,14 +51,14 @@ const SummaryBody = (props: Props) => {
                     result,
                 } = summary;
                 return (
-                    <TableRow hover role="checkbox" tabIndex={-1} key={useCase}>
+                    <TableRow hover role="checkbox" tabIndex={-1} key={name}>
                         <CustomTableCell value={index} />
                         <TableCell
                             className="cursor-pointer"
                             onClick={() => handleTestSummary(summary)}
                         >
                             <Typography variant="text_underline">
-                                {useCase}
+                                {name}
                             </Typography>
                         </TableCell>
                         <CustomTableCell value={total} />

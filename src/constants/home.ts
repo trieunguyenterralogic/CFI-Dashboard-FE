@@ -3,11 +3,11 @@ import { ColumnsTestBuild, ColumnsTestCase, ColumnsTestSummary, ColumsBuildSumma
 
 export const columnsTestBuild: readonly ColumnsTestBuild[] = [
     { 
-        id: "startTime", 
+        id: "starttime", 
         label: "Start time" 
     },
     {
-        id: "host",
+        id: "submitter",
         label: "Host",
     },
     {
@@ -15,7 +15,7 @@ export const columnsTestBuild: readonly ColumnsTestBuild[] = [
         label: "Release",
     },
     {
-        id: "image",
+        id: "trade_url",
         label: "Image",
     },
     {
@@ -72,7 +72,7 @@ export const columsBuildSummary: readonly ColumsBuildSummary[] = [
 
 export const columnsTestSummary: readonly ColumnsTestSummary[] = [
     {   
-        id: "useCase", 
+        id: "name", 
         label: "Use Case", 
         align: "left" 
     },
