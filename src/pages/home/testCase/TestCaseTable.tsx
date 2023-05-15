@@ -43,11 +43,14 @@ const TestCaseTable = () => {
     // ** State
     const [testCase, _] = useState<TestCase[]>([
         {
-            testCase: "common set up",
+            case_id: 1,
+            name: "common set up",
             result: "string",
-            failureCategory: "string",
-            rca: "string",
-            ddts: "string",
+            runtime: 1,
+            log_link: "1",
+            RCA: [],
+            suite_id: 1,
+            ddts: "",
         },
     ]);
 
@@ -82,13 +85,13 @@ const TestCaseTable = () => {
             </TableHead>
             <TableBody>
                 {testCase.map((summary: TestCase, index) => {
-                    const { testCase } = summary;
+                    const { name } = summary;
                     return (
                         <TableRow
                             hover
                             role="checkbox"
                             tabIndex={-1}
-                            key={testCase}
+                            key={name}
                             className="cursor-pointer"
                         >
                             <TableCell align="center">
@@ -98,7 +101,7 @@ const TestCaseTable = () => {
                             </TableCell>
                             <TableCell>
                                 <Typography variant="text_underline">
-                                    {testCase}
+                                    {name}
                                 </Typography>
                             </TableCell>
                             <TableCell>

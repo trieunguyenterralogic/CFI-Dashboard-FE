@@ -74,24 +74,14 @@ export interface TestSummary {
     blocked: number,
     skipped: number,
     ddts: number
-
-    // useCase: string;
-    // total: number;
-    // passed: number;
-    // failed: number;
-    // errored: number;
-    // blocked: number;
-    // skipped: number;
-    // ddts: number;
-    // result: string
 }
 
 export interface ColumnsTestCase {
     id:
-        | "testCase"
+        | "name"
         | "result"
-        | "failureCategory"
-        | "rca"
+        | "runtime"
+        | "RCA"
         | "ddts"
     label: string;
     align: "center" | "right" | "left" | "inherit" | "justify" | undefined,
@@ -100,9 +90,12 @@ export interface ColumnsTestCase {
 
 
 export interface TestCase {
-    testCase: string;
+    case_id: number,
+    name: string;
     result: string;
-    failureCategory: string;
-    rca: string;
+    runtime: number,
+    log_link: string,
+    RCA: Array<any>;
+    suite_id: number;
     ddts: string
 }
