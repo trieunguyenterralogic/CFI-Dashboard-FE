@@ -46,7 +46,9 @@ const TestSummary = (props: Props) => {
     // ** State
     const [testSummaryList, _] = useState<TestSummaryType[]>([
         {
-            useCase: "common set up",
+            suite_id: 1,
+            name: "common set up",
+            result: "success",
             total: 65,
             passed: 58,
             failed: 2,
@@ -54,7 +56,6 @@ const TestSummary = (props: Props) => {
             blocked: 3,
             skipped: 5,
             ddts: 96.67,
-            result: "success",
         },
     ]);
 

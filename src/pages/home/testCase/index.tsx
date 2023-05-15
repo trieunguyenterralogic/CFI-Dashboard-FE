@@ -26,7 +26,7 @@ const TestCase = (props: Props) => {
     return (
         <Dialog
             maxWidth="lg"
-            open={!!testSummary?.useCase}
+            open={!!testSummary?.name}
             onClose={onCloseDialog}
         >
             <DialogTitle className="flex justify-between items-start border-b border-solid border-gray-300 pl-12 relative">

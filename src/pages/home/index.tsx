@@ -1,3 +1,6 @@
+// ** React Imports
+import { useEffect } from "react";
+
 // ** Layout Imports
 import Header from "@layouts/header";
 
@@ -13,6 +16,7 @@ import { styled } from "@mui/material";
 import TableTest from "@pages/home/tableTest";
 import ChartVisualizer from "./chartVisualizer";
 
+// ** Customize Button style
 const Button = styled(MuiButton)<ButtonProps>(() => {
     return {
         boxShadow: "none",
@@ -33,7 +37,7 @@ const Home = () => {
         <>
             <Header />
 
-            <Box width={1300} className="mx-auto my-5">
+            <Box width={1300} className="mx-auto mt-5 mb-16">
                 <Box className="flex items-end justify-end">
                     <Button
                         color="secondary"

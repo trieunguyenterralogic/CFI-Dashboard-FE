@@ -27,9 +27,7 @@ const BuildBody = (props: Props) => {
                 return (
                     <TableRow
                         hover
-                        role="checkbox"
-                        tabIndex={-1}
-                        key={build.startTime}
+                        key={build.starttime}
                         onClick={() => handleTestBuild(build)}
                         className="row-test-build cursor-pointer"
                     >

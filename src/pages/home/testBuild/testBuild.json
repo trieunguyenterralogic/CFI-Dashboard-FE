@@ -1,24 +1,14 @@
 [
     {
-        "startTime" : "2023-05-22 23:25:45",
-        "host" : "172.128.0.0",
-        "release" : "17.6.1",
-        "image" : "17.6.1",
-        "testbed" : "Shockware",
-        "total" : 65,
-        "passed" : 58,
-        "failed" : 2,
-        "errored" : 1
-    },
-    {
-        "startTime" : "2023-05-22 23:25:50",
-        "host" : "172.128.0.0",
-        "release" : "17.6.1",
-        "image" : "17.6.1",
-        "testbed" : "Shockware",
-        "total" : 65,
-        "passed" : 58,
-        "failed" : 2,
-        "errored" : 1
+        "trade_id": 1,
+        "starttime": "2023-05-22 23:25:45",
+        "submitter": "trieunguyen",
+        "release": "string",
+        "trade_url": "url",
+        "testbed": "testbed",
+        "passed": 1,
+        "failed": 1,
+        "errored": 1
     }
+    
 ]

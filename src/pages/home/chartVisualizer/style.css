@@ -1,0 +1,18 @@
+.chart-visulizer .recharts-default-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.chart-visulizer .recharts-default-legend .recharts-legend-item {
+    margin-right: 20px!important;
+}
+
+.recharts-legend-item-text {
+    color: #414344!important;
+}
+
+
+
+

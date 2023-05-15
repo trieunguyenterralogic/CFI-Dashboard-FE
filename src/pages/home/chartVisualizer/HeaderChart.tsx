@@ -38,6 +38,10 @@ const HeaderChart = () => {
                                 paddingTop: 0,
                                 paddingBottom: 0,
                             },
+                            "&.MuiInputBase-colorPrimary:hover .MuiOutlinedInput-notchedOutline":
+                                {
+                                    borderColor: "#00BCEB",
+                                },
                         }}
                         defaultValue={optionSelectModalChart[0].value}
                     >
@@ -66,6 +70,10 @@ const HeaderChart = () => {
                                         paddingBottom: 0,
                                         height: 45,
                                     },
+                                    "& .MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline":
+                                        {
+                                            borderColor: "#00BCEB",
+                                        },
                                 }}
                                 calendars={1}
                                 slots={{ field: SingleInputDateRangeField }}

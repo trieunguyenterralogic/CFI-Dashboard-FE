@@ -1,11 +1,10 @@
 export interface ColumnsTestBuild {
     id:
-        | "startTime"
-        | "host"
+        | "starttime"
+        | "submitter"
         | "release"
-        | "image"
+        | "trade_url"
         | "testbed"
-        | "total"
         | "passed"
         | "failed"
         | "errored"
@@ -13,15 +12,23 @@ export interface ColumnsTestBuild {
 }
 
 export interface TestBuild {
-    startTime: string;
-    host: string;
-    release: string;
-    image: string;
-    testbed: string;
-    total: number;
-    passed: number;
-    failed: number;
-    errored: number;
+    trade_id: number,
+    passed: number,
+    passx?: number,
+    failed: number,
+    errored: number,
+    blocked?: number,
+    skipped?: number,
+    starttime: string,
+    runtime?: number,
+    testbed: string,
+    release: string,
+    submitter: string,
+    trade_url: string,
+    jobname?: string,
+    device_version?: Array<any>,
+    dna_version?: string,
+    folder_id?: number
 }
 
 export interface ColumsBuildSummary {
@@ -39,7 +46,7 @@ export interface ColumsBuildSummary {
 
 export interface ColumnsTestSummary {
     id:
-        | "useCase"
+        | "name"
         | "total"
         | "passed"
         | "failed"
@@ -53,15 +60,30 @@ export interface ColumnsTestSummary {
 }
 
 export interface TestSummary {
-    useCase: string;
-    total: number;
-    passed: number;
-    failed: number;
-    errored: number;
-    blocked: number;
-    skipped: number;
-    ddts: number;
-    result: string
+    suite_id: number,
+    name: string,
+    result: string,
+    runtime?: number,
+    log_link?: string,
+    trade_id?: number,
+    total: number,
+    passed: number,
+    passx?: number,
+    failed: number,
+    errored: number,
+    blocked: number,
+    skipped: number,
+    ddts: number
+
+    // useCase: string;
+    // total: number;
+    // passed: number;
+    // failed: number;
+    // errored: number;
+    // blocked: number;
+    // skipped: number;
+    // ddts: number;
+    // result: string
 }
 
 export interface ColumnsTestCase {
