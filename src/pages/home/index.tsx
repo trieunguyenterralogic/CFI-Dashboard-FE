@@ -16,6 +16,8 @@ import { styled } from "@mui/material";
 import TableTest from "@pages/home/tableTest";
 import ChartVisualizer from "./chartVisualizer";
 
+import Service from "@configs/service";
+
 // ** Customize Button style
 const Button = styled(MuiButton)<ButtonProps>(() => {
     return {
@@ -33,6 +35,15 @@ const Button = styled(MuiButton)<ButtonProps>(() => {
 });
 
 const Home = () => {
+    const service = new Service();
+
+    useEffect(() => {
+        service
+            .get("https://jsonplaceholder.typicode.com/todos", {})
+            .then((res) => {
+                console.log(res);
+            });
+    });
     return (
         <>
             <Header />
